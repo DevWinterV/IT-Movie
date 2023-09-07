@@ -1,0 +1,116 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  
+  table.List {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table.List th,
+  table.List td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table.List .tieude1 {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #337ab7;
+    color: blueviolet;
+    padding: 15px;
+  }
+  
+  table.List th:nth-child(1),
+  table.List th:nth-child(2),
+  table.List th:nth-child(3),
+  table.List th:nth-child(4),
+  table.List th:nth-child(5),
+  table.List th:nth-child(6),
+  table.List th:nth-child(7),
+  table.List th:nth-child(8) {
+    background-color: #f2f2f2;
+  }
+  
+  table.List td img {
+    width: 100px;
+    height: auto;
+  }
+  
+  table.List td a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  table.List td a:hover {
+    color: #23527c;
+  }
+  
+  table.List tr:last-child td {
+    border-bottom: none;
+  }
+  
+  table.List tr:last-child td a {
+    background-color: #337ab7;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  table.List tr:last-child td a:hover {
+    background-color: #23527c;
+  }
+  
+  a.back-link {
+    display: inline-block;
+    margin-top: 5px;
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  a.back-link:hover {
+    color: #23527c;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8f8f8;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar li a:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+h1{
+    text-align:  center;
+    color: green;
+}

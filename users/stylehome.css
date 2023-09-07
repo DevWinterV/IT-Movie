@@ -1,0 +1,403 @@
+title{
+  font-family: 'Times New Roman', Times, serif
+}
+/* CSS styles cho menu */
+body {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color:black;
+  font-family:  SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+/* MENU*/
+.menu {
+  display: flex;
+  align-items: center;
+}
+input.txttimkiem{
+  width: 500px;
+  height: 30px;
+  border-radius: 3px;
+}
+img{
+  width: 80px;
+  height: 50px;
+  border-radius: 5px;
+}
+.content {
+  /* CSS cho nội dung trang web */
+}
+
+/* CSS cho menu ngang */
+.navbar {
+  border-radius: 5px;
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+}
+.menu-vertical {
+  margin: 10px;
+  display: none;
+  flex-direction: column;
+}
+
+.menu-vertical li {
+  margin-bottom: 10px;
+}
+
+.menu-vertical li a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .navbar{
+    width: 460px;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+  }
+  .menu-vertical  {
+    flex-direction: column;
+    align-items: flex-start;
+    display: block;
+  }
+
+  .show-menu-btn {
+    display: block;
+  }
+}
+ul li a:hover{
+  padding: 9px;
+  background-color: gray;
+}
+
+.show-menu-btn {
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  background-image: url('anhnen/menu.png');
+  background-size: cover;
+  background-position: center;
+  display: none;
+  border: thin none white;
+}
+
+/* Các phần tử bên trong phần body */
+header, h2.phimhot, section, footer {
+  width: 100%;
+  max-width: 1000px; /* Điều chỉnh kích thước phù hợp với nội dung của bạn */
+  margin: 10px;
+  padding: 10px;
+}
+header{
+  height: auto;
+  padding: auto;
+  margin: auto;
+}
+
+  /* CSS styles cho phần giữa */
+  section {
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5;
+    margin-left: 10px;
+  }
+  h2.phimhot{
+    margin: 1px;
+    border-radius: 5px;
+    color:  white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5;
+    padding-left: 25px;
+    margin-left: 5px;
+  }
+  h2.phimcapnhat{
+    margin: 1px;
+    border-radius: 5px;
+    color:  white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5;
+    margin-left: 5px;
+    padding-right: 55%;
+  }
+  h2.phimsapchieu{
+    margin: 1px;
+    border-radius: 5px;
+    color:  white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5;
+    margin-left: 5px;
+    text-align: center;
+  }
+    
+  .card {
+    width: 180px;
+    height: 310px;
+    background-color:#333;
+    margin: 8px;
+    padding: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .card-link {
+    text-decoration: none;
+  }
+  .card_moivenew {
+    width: 140px;
+    height: 205px;
+    background-color:#333;
+    margin: 0.9px;
+    padding: 0px;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+    text-align: center;
+  }
+
+  .card_moivenew:hover {
+    transform: scale(0.9);
+  }
+  .card-link {
+    text-decoration: none;
+  }
+  
+/* CSS styles for hot movie titles */
+.tenphim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-weight: initial;
+  color: white;
+  text-shadow: #333;
+  white-space: nowrap;
+}
+
+.tenphim1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-weight: initial;
+  color: white;
+  text-shadow: #333;
+  white-space: nowrap;
+}
+
+.menutheloai{
+  align-items: center;
+  width: auto;
+}
+.menutheloai:hover + .menucontheloai,
+.menucontheloai:hover {
+  display: block;
+  background-color: #aaa;
+}
+  /* CSS styles cho menucon*/
+
+  .menucontheloai {
+    width: 200px;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menucontheloai li {
+    margin-right: 10px;
+  }
+  
+  .menucontheloai li a {
+    text-decoration: none;
+    color: #333;
+  }
+  .menucontheloai {
+    margin: 10px;
+    display: none;
+    flex-direction: row;
+  }
+  
+  .menucontheloai li {
+    margin-bottom: 10px;
+  }
+  
+  .menucontheloai li a {
+    text-decoration: none;
+    color:black;
+  }
+  
+  
+    
+  /* CSS styles cho footer */
+  footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+    max-width: 1000px;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  footer ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  footer ul li a:hover {
+    color: #aaa;
+  }  
+
+  .txttimkiem {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .left-column {
+    background-color: black;
+    height: auto;
+    border: thin solid whitesmoke;
+    width: 71%;
+    float: left;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 5;
+    margin-left: 10px;
+  }
+  
+  .right-column {
+    border: thin dotted whitesmoke;
+    background-color:black;
+    height: auto;
+    width: 24%;
+    float: left;
+  }
+
+
+  .phimsapchieu {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  @media (max-width: 600px) {
+    .left-column {
+      width: 425.5px;
+    }
+    .right-column {
+      width: 465px;
+    }
+    
+  }
+  .menu .btndangxuat {
+    background-color: #007bff;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  .menu .btndangxuat:hover {
+    background-color: #007bff;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  .menu .tennguoidung {
+    text-decoration: underline;
+    background-color: #007bff;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  .thongbao{
+    font-size: 20px;
+    color: antiquewhite;
+  }  
+  .card_xemsau{
+    width: 180px;
+    height: 340px;
+    background-color:#333;
+    margin: 8px;
+    padding: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+    text-align: center;
+  }
+  .delete-button
+  {
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+  }

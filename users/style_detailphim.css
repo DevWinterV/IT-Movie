@@ -1,0 +1,416 @@
+.chitietphim {
+    border: thin solid wheat;
+    display: flex;
+    max-width: 1000px;
+    margin-top: 15px;      
+    border-radius: 5px;  
+    align-items: center;
+    margin-bottom: 20px;
+}
+.title
+{
+}
+.chitietphim-img img {
+    width: 300px;
+    height: 400px;
+}
+
+.chitietphim-info {
+    margin-left: 20px;
+}
+
+.chitietphim-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.chitietphim-language {
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.chitietphim-genre {
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 10px;
+}
+  
+.chitietphim-description {
+    font-size: 15px;
+    color: #777;
+    text-align: justify;
+}
+title{
+    font-family: 'Times New Roman', Times, serif
+  }
+  /* CSS styles cho menu */
+  body {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color:black;
+    font-family:  SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  }
+  
+  /* MENU*/
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  input.txttimkiem{
+    width: 500px;
+    height: 30px;
+    border-radius: 3px;
+  }
+  img{
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+  }
+
+  /* CSS cho menu ngang */
+  .navbar {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 10px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-right: 10px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+  }
+  .menu-vertical {
+    margin: 10px;
+    display: none;
+    flex-direction: column;
+  }
+  
+  .menu-vertical li {
+    margin-bottom: 10px;
+  }
+  
+  .menu-vertical li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    .navbar{
+      width: 460px;
+    }
+    .menu {
+      flex-direction: column;
+      align-items: flex-start;
+      display: none;
+    }
+    .menu-vertical  {
+      flex-direction: column;
+      align-items: flex-start;
+      display: block;
+    }
+  
+    .show-menu-btn {
+      display: block;
+    }
+  }
+  ul li a:hover{
+    padding: 9px;
+    background-color: gray;
+  }
+  
+  .show-menu-btn {
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    background-image: url('anhnen/menu.png');
+    background-size: cover;
+    background-position: center;
+    display: none;
+    border: thin none white;
+  }
+  
+  /* Các phần tử bên trong phần body */
+  header, h2.phimhot, section, footer {
+    width: 100%;
+    max-width: 1000px; /* Điều chỉnh kích thước phù hợp với nội dung của bạn */
+    margin: 10px;
+    padding: 10px;
+  }
+  header{
+    height: auto;
+    padding: auto;
+    margin: auto;
+  }
+  
+    /* CSS styles cho phần giữa */
+    section {
+      margin: 5px;
+      border-radius: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 5;
+      margin-left: 10px;
+    }
+    h2.phimhot{
+      margin: 1px;
+      border-radius: 5px;
+      color:  white;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 5;
+      padding-left: 25px;
+      margin-left: 5px;
+    }
+    h2.phimcapnhat{
+      margin: 1px;
+      border-radius: 5px;
+      color:  white;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 5;
+      margin-left: 5px;
+      padding-right: 55%;
+    }
+    h2.phimsapchieu{
+      margin: 1px;
+      border-radius: 5px;
+      color:  white;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 5;
+      margin-left: 5px;
+      text-align: center;
+    }
+      
+    .card {
+      width: 180px;
+      height: 310px;
+      background-color:#333;
+      margin: 8px;
+      padding: auto;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transition: transform 0.3s;
+      text-align: center;
+    }
+    
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card-link {
+      text-decoration: none;
+    }
+    .card_moivenew {
+      width: 140px;
+      height: 205px;
+      background-color:#333;
+      margin: 0.9px;
+      padding: 0px;
+      border-radius: 2px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transition: transform 0.3s;
+      text-align: center;
+    }
+  
+    .card_moivenew:hover {
+      transform: scale(0.9);
+    }
+    .card-link {
+      text-decoration: none;
+    }
+    
+
+  
+  /* CSS styles cho tiêu đề phim hot */
+  .tenphim {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-weight: initial;
+  color: white;
+  text-shadow: #333;
+  white-space: nowrap;
+  }
+  
+
+.tenphim1 {
+  display: flex;
+  float: left;
+  justify-content: left;
+  align-items: center;
+  margin: 0;
+  font-size: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-weight: initial;
+  color: white;
+  text-shadow: #333;
+}
+
+  
+    .videophim {
+      margin-top: 10px;
+      border-radius: 5px;
+      border: thin solid none;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      font-size: 10px;
+      text-align: center;
+      font-weight: initial;
+      color: white;
+      text-shadow: #333;
+    }
+    
+    
+    /* CSS styles cho phim cập nhật và phim sắp chiếu */
+  
+    
+    
+   
+    li a.btndangnhap{
+      background-color: gray;
+      padding: 10px;
+    }
+    .txttimkiem {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    
+    input[type="submit"] {
+      padding: 5px 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    
+    .left-column {
+      background-color: black;
+      height: auto;
+      border: thin solid whitesmoke;
+      width: 71%;
+      float: left;
+      margin: 5px;
+      border-radius: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      padding: 5;
+      margin-left: 10px;
+    }
+    
+    .right-column {
+      border-radius: 3px;
+      border: thin dotted whitesmoke;
+      background-color:black;
+      height: auto;
+      width: 24%;
+      float: left;
+    }
+  
+  
+    .phimsapchieu {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .left-column {
+        width: 425.5px;
+      }
+      .right-column {
+        width: 465px;
+        display: flex;
+      }
+      .chitietphim {
+        max-width: 465px;
+        display: flex;
+        margin-top: 15px;        
+      }
+      .footer{
+        max-width: 400px;
+        display: flex;
+        margin-top: 15px;        
+      }
+    }
+    .btnxemphim {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 8px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 2px;
+      cursor: pointer;
+    }
+    .btnxemphim:hover{
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 10px 17px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 2px;
+      cursor: pointer;
+    }
+    .btnxemreview:hover{
+      background-color: #008CBA; /* Blue */
+      border: none;
+      color: white;
+      padding: 10px 17px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 2px;
+      cursor: pointer;
+    }
+    .btnxemreview {
+      background-color: #008CBA; /* Blue */
+      border: none;
+      color: white;
+      padding: 8px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 1px;
+      cursor: pointer;
+    }
